@@ -1,0 +1,44 @@
+########## PROMPT 1 ##########
+
+This is my preregistration for an upcoming lab study. 
+
+I want you to read it cerefully and create a R script to simulate the dataset I will obtain from my study. I want the dataset to be in a long format (one raw for each observation)
+
+GENERAL VARIABLES (always the same for the same participant):
+$ pid                          <fct> pp001, pp001, pp001, pp001, pp001, pp001, pp001, pp001, NA, …
+$ gender                          <fct> male, female
+$ age                           <dbl> random
+$ smell_condition              <fct> control, clean, iva, ...
+$ counterbalance_order_smell   <fct> control-iva-clean, control-iva-clean, control-iva-clean, ... (all the permutations) 
+$ pathogen_avoidance           <dbl> 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, NA, NA, NA, 5.0, 5.0… (random, normally distributed, from 1 to 7)
+$ experiment   <fct> IAT, AAT (this will tell us if this observation is which one of the two studies)
+
+FOR THE IAT OVSERVATIONS:
+$ RT                           <dbl> 300, 300, ... (for now, add "300" for all observations)
+$ emotion_condition            <fct> SHC-danger, NA, SHC-disease, ...
+$ picture_type                 <fct> SHC_pic, disease_pic…
+$ pic_id                       <fct> shc_001, shc_002, shc_003, disease_001, disease_002, disease…
+$ testing_block                <fct> no, no, no (always no)
+$ counterbalance_order_emotion <fct> congruent-incongruent, congruent-incongruent, … (always the same for the same participant)
+
+FOR THE IAT OVSERVATIONS:
+$ RT                                 <dbl> 300, 300, 300... 
+$ direction                          <fct> approach, avoidance ... 
+$ clothing_type                      <fct> SHC, FHC… 
+$ pic_id                             <fct> shc_001, shc_002, fhc_001, fhc_002, ... 
+$ testing_block                      <fct> no, no, no, ... 
+$ counterbalance_order_clothing_type <fct> FHC_first, SHC_first... (always the same for the same participant)
+
+
+Add any variable that is missing based on the preregistration. 
+
+
+########## PROMPT 2 ##########
+
+Now I want you to simulate the distribution of our dependent variable, reaction times (RT). 
+
+Assume that the hypotheses layed out in our preregistration are correct and assign them plausible effect sizes.
+
+Write R code to simulate the RTs data. 
+
+(Check online for guidelines for data simulation in R, specifically for the purpose of multilevel models analysed with brms package.) 
