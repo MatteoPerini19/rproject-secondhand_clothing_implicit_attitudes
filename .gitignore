@@ -1,0 +1,35 @@
+```
+# RStudio / R session
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# macOS
+.DS_Store
+
+# Secrets
+.Renviron
+.env
+
+# Render/caches
+*_files/
+*_cache/
+.quarto/
+.quarto_cache/
+
+# Outputs (regenerable)
+output/
+plots/
+figures/
+
+# Data
+*.csv
+*.xlsx
+
+
+# Big docs (optional, but usually sensible)
+*.pdf
+*.docx
+*.pptx
+
